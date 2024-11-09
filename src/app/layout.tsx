@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "../../components/header";
+import './globals.css';
+
 
 // Define fonts using localFont with appropriate configurations
 const geistSans = localFont({
@@ -27,12 +29,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Combine font variables for global styling in a single class
   const fontClassNames = `${geistSans.variable} ${geistMono.variable} antialiased`;
 
   return (
     <html lang="en">
-      <body className={fontClassNames}>
+      <body className={`${fontClassNames} bg-red-100`}>
         <header>
           <Header />
         </header>
@@ -41,3 +42,4 @@ export default function RootLayout({
     </html>
   );
 }
+
