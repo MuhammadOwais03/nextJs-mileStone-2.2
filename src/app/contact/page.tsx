@@ -1,5 +1,5 @@
 
-import style from '../../../styles/contact.module.css'
+
 
 function Contact() {
   return (
