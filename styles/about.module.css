@@ -1,0 +1,16 @@
+/* styles/about.module.css */
+.about {
+    padding: 2rem;
+    background-color: #e9ecef;
+  }
+  
+  .h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
